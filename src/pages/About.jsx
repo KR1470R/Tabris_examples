@@ -1,9 +1,12 @@
-import {Page, TextView} from 'tabris'
-export class About extends Page {
+import {Page, TextView, Stack} from 'tabris';
+export class AboutPage extends Page {
     constructor(properties) {
         super();
         this.set({title: 'About App', ...properties}).append(
-           <TextView top>We created this app for Uzbekistan Bisness.</TextView>
+            <Stack centerY>
+                <TextView center font='50'>Created by Azizbek Masharibov & Victor Dementyev.</TextView>
+                <TextView center font='50'>For business job and finance.</TextView>
+            </Stack>
         );
     }
 };

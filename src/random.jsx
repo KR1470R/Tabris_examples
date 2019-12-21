@@ -3,7 +3,7 @@ import {Page, Button, TextView, contentView, AlertDialog} from 'tabris';
 export class RandomPL extends Page{
   constructor(...props){
     super();
-    this.set({title: "Programming Language Generator", ...props}).append(
+    this.set({title: "Programming Language Generator"}).append(
       <$>
       <Button centerX bottom="50" onSelect={showAlert} padding={16} background={[50, 200, 50]}>Show me the dialog</Button>
       <Button center onSelect={showText} padding={16} background={[250, 150, 150]}>Show me a programming language</Button>
